@@ -7,7 +7,7 @@ function WarningMsg() {
         document.getElementById('p2').innerHTML = ("User wants to continue!");    
      }
      else{
-        document.getElementById('p3').innerHTML = ("User does not want to continue!");    
+        document.getElementById('p2').innerHTML = ("User does not want to continue!");    
      }
     }
 
