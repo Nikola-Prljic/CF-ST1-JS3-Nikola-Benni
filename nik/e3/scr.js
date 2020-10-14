@@ -10,9 +10,23 @@
 
 //let ranNumber = Math.floor(Math.random() * 101);
 
-document.getElementById("p1").onmouseover = function() {mouseOver()};
-let ranNumber = Math.floor(Math.random() * 101)
-console.log (ranNumber);
-function mouseOver() {
-    document.getElementById("p1").innerHTML = ranNumber;
+document.getElementById("p1").onmouseover = function() {mouseOver1(), compare()};
+
+
+let ranNumber1 = Math.floor(Math.random() * 101);
+let ranNumber2 = Math.floor(Math.random() * 101);
+
+
+function mouseOver1() {
+    document.getElementById("p1").innerHTML = ranNumber1;
+    document.getElementById("p2").innerHTML = ranNumber2;
+    
   }
+
+function compare(){
+    if (ranNumber1 > ranNumber2) {
+        alert(ranNumber1 + " is greater than " + ranNumber2);
+       } else {
+        alert(ranNumber1 + " is smaller than " + ranNumber2);
+       }
+    }
